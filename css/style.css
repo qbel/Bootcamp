@@ -1,0 +1,130 @@
+#first{
+  background-image: url("../img/patch2.jpg"); /* The image used */
+  /* background-color: #cccccc; */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+#item{
+  padding-left:30px;
+  padding-right:30px;
+  color:white;
+  font-weight: bolder;
+}
+#boot{
+  margin-top:50px;
+  font-weight:bolder;
+}
+#social{
+  font-weight:bolder;
+  margin-top:20px;
+}
+#for{
+  margin-top:28px;
+  font-weight:bolder
+}
+#text{
+  font-size:12px;
+}
+
+.vr-all {
+	padding:0px;
+  border-right:4px solid #94c842;
+  
+}
+.vr-none {
+	padding:0px;
+	border-left:4px solid #94c842;
+}
+/* .vr-xs {
+	padding:0px;
+} */
+.vr-md {
+	padding:0px;
+}
+/* .hrspacing { padding:0px; } */
+.hrcolor {
+	border-color: #94c842;
+	border-style: solid;
+	border-bottom: 1px;
+	margin:0px;
+	padding:0px;
+}
+#menu ul li {
+  list-style-type: none;
+  /* padding:8px; */
+}
+#menu ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #94c842; /* Change the color */
+  font-weight: bolder; /* If you want it to be bold */
+  font-size:30px;
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+#line{
+  width: 80%;
+  /* background-color:#006600; */
+ height: 2px;
+ /* background: linear-gradient(to right, #99ff66 23%, #94c842 100%); */
+ /* background: linear-gradient(to left, #009933 0%, #33cc33 100%); */
+ background: linear-gradient(to left, #003300 0%, #99ff33 79%);
+ margin-top:0px;
+}
+#line2{
+  width: 80%;
+ height: 2px;
+ background: linear-gradient(to right, #003300 0%, #99ff33 79%);
+ margin-top:0px;
+}
+
+/* remove right vertical rule on small */
+@media(min-width:992px){
+	.vr-xs {
+		border-right:1px solid #CC0000;
+	}
+	}
+
+@media only screen and ( max-width: 1024px )
+{
+  #boot{
+    margin-top:50px;
+    font-size:35px;
+    font-weight:bolder;
+  }
+  #social{
+    font-weight:bolder;
+    margin-top:10px;
+    /* font-size: */
+  }
+  #for{
+    margin-top:10px;
+    font-weight:bolder
+  }
+  .offset-1{
+    margin: 0;
+  }
+  .card{
+    margin-top:20px;
+  }
+}
+
+
+/* @media  only screen and (max-width: 991.98px){
+  #boot{
+    margin-top:20px;
+    font-size:35px;
+    font-weight:bolder;
+    font-size:20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #boot{
+    margin-top:20px;
+    font-size:35px;
+    font-weight:bolder;
+  }
+} */
